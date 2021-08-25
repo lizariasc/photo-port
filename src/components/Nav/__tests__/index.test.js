@@ -27,4 +27,13 @@ describe('Nav component', () => {
     // Assert  
     expect(getByLabelText('camera')).toHaveTextContent('📸');
     });
-  })  
+  });  
+
+  // check to see if some of our links are visible
+  describe('links are visible', () => {
+    it('inserts text into the links', () => {
+      const { getByTestId } = render(<Nav />);
+      expect(getByTestId('link')).toHaveTextContent('Oh Snap!');
+      expect(getByTestId('about')).toHaveTextContent('About me');
+    });
+  })
