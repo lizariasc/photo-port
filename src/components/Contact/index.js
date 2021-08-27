@@ -1,10 +1,6 @@
 import React from 'react';
 
 function ContactForm() {
-
-    // JSX
-    }
-   
     return (
         <section>
           <h1>Contact me</h1>
@@ -25,6 +21,9 @@ function ContactForm() {
           </form>
         </section>
         );
+    
+    }
+   
     
     export default ContactForm;
     
